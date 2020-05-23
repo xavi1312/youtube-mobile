@@ -1,25 +1,22 @@
 <template>
-  <div id="app">
-    <topBar></topBar>
-  </div>
+  <v-app>
+    <topbar></topbar>
+    <v-content> </v-content>
+  </v-app>
 </template>
 
 <script>
-  import topBar from "./components/header.vue";
+  import topbar from "./components/header";
 
   export default {
     name: "App",
+
     components: {
-      topBar,
+      topbar,
     },
+
+    data: () => ({
+      //
+    }),
   };
 </script>
-
-<style lang="scss">
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-  }
-</style>

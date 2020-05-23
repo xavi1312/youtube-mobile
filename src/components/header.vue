@@ -1,21 +1,31 @@
 <template>
   <header>
-    <img
-      class="logo-image"
-      src="../assets/yt_logo_rgb_dark.png"
-      alt="YouTube logo"
-      srcset=""
-    />
-    <div class="icons">
-      <font-awesome-icon :icon="['fab', 'chromecast']" />
-      <font-awesome-icon icon="video" />
-      <font-awesome-icon icon="search" />
+    <v-app-bar>
       <img
-        class="user-profile-image"
-        src="https://yt3.ggpht.com/-7GJNRWiWh_c/AAAAAAAAAAI/AAAAAAAAAAA/Ef1w4FgIQ_0/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg"
-        alt="User profile image"
+        class="logo-image"
+        src="../assets/yt_logo_rgb_dark.png"
+        alt="YouTube logo"
+        srcset=""
       />
-    </div>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-cast</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-video</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-avatar height="25" width="25">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png"
+            alt="Xavi"
+          />
+        </v-avatar>
+      </v-btn>
+    </v-app-bar>
   </header>
 </template>
 <script>
@@ -25,26 +35,7 @@
 </script>
 <style lang="scss">
   @import "../scss/variables.scss";
-  header {
-    display: flex;
-    padding: 1em;
-    background-color: $light-black;
-  }
   .logo-image {
     height: 20px;
-  }
-  .icons {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    & > * {
-      font-size: 1.25em;
-      margin-left: 30px;
-      color: #fff;
-    }
-  }
-  .user-profile-image {
-    border-radius: 50%;
-    height: 25px;
   }
 </style>
