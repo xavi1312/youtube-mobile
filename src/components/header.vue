@@ -33,7 +33,7 @@
     name: "topBar",
   };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
   @import "../scss/variables.scss";
   .logo-image {
     height: 20px;
