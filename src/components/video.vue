@@ -14,7 +14,7 @@
           >{{ video.videoName }}
         </v-card-title>
         <v-card-subtitle class="pl-0 pb-2 caption"
-          >{{ video.userName }} · {{ video.visualizations }} visualizations ·
+          >{{ video.userName }} · {{ video.visualizations }} views ·
           {{ video.uploadDate }}
         </v-card-subtitle>
       </div>
